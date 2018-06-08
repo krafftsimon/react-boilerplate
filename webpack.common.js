@@ -4,10 +4,11 @@ const CleanWebPackPlugin = require('clean-webpack-plugin');
 
 // Inject .js bundle into <body> of index.html
 // 1st arg: obj of options (optional)
-// template option defaults to 'src/index.html'
 // filname option defaults to 'index.html'
 // inject option defaults to true -> javascript is injected at the bottom of <body>
-const HtmlWebPackPluginConfig = new HtmlWebPackPlugin();
+const HtmlWebPackPluginConfig = new HtmlWebPackPlugin({
+  template: './src/index.html',
+});
 
 // Clean build directory every time we build our app.
 // 1st arg: array of paths.
@@ -43,9 +44,4 @@ module.exports = {
     HtmlWebPackPluginConfig,
     CleanWebPackPluginConfig,
   ],
-  devServer: {
-    contentBase: './build',
-    open: true,
-    host: '0.0.0.0',
-  },
 }
