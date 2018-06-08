@@ -6,3 +6,7 @@ Made from scratch with a custom react boilerplate.
 npm install
 npm run build
 npm start
+
+## Features
+cache busting
+sass (scss)
