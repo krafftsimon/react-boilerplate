@@ -19,6 +19,21 @@ npm run build
 Builds the application for development. Applies minification and tree shaking.
 Generates a bundle and a source map in the build folder.
 
+## Tests
+```Shell
+npm run test
+```
+
+## Analyze bundle.js
+Install source-map-explorer
+```Shell
+npm install -g source-map-explorer
+```
+Analyze:
+```Shell
+source-map-explorer main.[hash].js main.[hash].js.map
+```
+
 # Features
 - cache busting
 - sass (scss)
@@ -27,7 +42,7 @@ Generates a bundle and a source map in the build folder.
 - minification and tree shaking for production
 - source maps for both dev and prod
 - Redux
+- Jest with Enzyme
 
 # TODO
 add css minification
-add testing framework
