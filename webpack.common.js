@@ -22,14 +22,14 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        exclude: ['node-modules'],
+        exclude: /node-modules/,
         use: [
           { loader: 'babel-loader' },
         ],
       },
       {
         test: /\.scss$/,
-        exclude: ['node-modules'],
+        exclude: /node-modules/,
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' },
@@ -38,7 +38,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|jpeg|gif|svg)$/,
         use: [
           {
             loader: 'file-loader',

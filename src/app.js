@@ -20,17 +20,10 @@ class App extends Component {
   render() {
     return (
       <div className="test">
-        <h1> Reddit Clone </h1>
+        <h1>Welcome to React / Redux Boilerplate App.</h1>
         <img src={eaimg} />
-        <h1> Reddit Clone </h1>
         <div> {this.state.counter} </div>
-        <button onClick={() => this.incrCounter()}>incr</button>
-        <button>asd</button>
-        <button>asd</button>
-        <button>asd</button>
-        <button>asd</button>
-        <button>asd</button>
-        
+        <button onClick={() => this.incrCounter()}>incr</button>        
       </div>
     );
   }
