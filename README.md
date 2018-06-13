@@ -1,4 +1,5 @@
 # React / Redux Boilerplate
+Simple React / Redux boilerplate that uses redux-thunk and axios.
 ```Shell
 npx react-redux-bp my-app
 ```
@@ -24,5 +25,6 @@ Generates a bundle and a source map in the build folder.
 - development server
 - hot module replacement
 - minification and tree shaking for production
+- source maps for both dev and prod
 - Redux
 
