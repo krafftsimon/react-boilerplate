@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './app.scss';
+import * as eaimg from './assets/EA.png';
 
 class App extends Component {
   constructor() {
@@ -20,7 +21,7 @@ class App extends Component {
     return (
       <div className="test">
         <h1> Reddit Clone </h1>
-        
+        <img src={eaimg} />
         <h1> Reddit Clone </h1>
         <div> {this.state.counter} </div>
         <button onClick={() => this.incrCounter()}>incr</button>

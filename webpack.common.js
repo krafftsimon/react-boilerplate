@@ -25,17 +25,29 @@ module.exports = {
         exclude: ['node-modules'],
         use: [
           { loader: 'babel-loader' },
-          
         ],
       },
       {
         test: /\.scss$/,
+        exclude: ['node-modules'],
         use: [
-          { loader: "style-loader" },
-          { loader: "css-loader" },
-          { loader: "postcss-loader" },
-          { loader: "sass-loader" }
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          { loader: 'postcss-loader' },
+          { loader: 'sass-loader' }
         ],
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[hash:8].[ext]',
+              outputPath: 'assets/',
+            }
+          }
+        ]
       }
     ]
   },

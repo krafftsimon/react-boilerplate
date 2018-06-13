@@ -28,3 +28,6 @@ Generates a bundle and a source map in the build folder.
 - source maps for both dev and prod
 - Redux
 
+# TODO
+add css minification
+add testing framework
