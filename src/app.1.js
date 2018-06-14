@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 
-import App1 from './app.1';
-import './app.scss';
+import './test.scss';
 import * as eaimg from './assets/EA.png';
 
-class App extends Component {
+class App1 extends Component {
   constructor() {
     super()
     this.state = {
@@ -25,11 +24,10 @@ class App extends Component {
         <h2>Welcome to React / Redux Boilerplate App.</h2>
         <img src={eaimg} />
         <div> {this.state.counter} </div>
-        <button onClick={() => this.incrCounter()}>incr</button>      
-        <App1 />  
+        <button onClick={() => this.incrCounter()}>incr</button>        
       </div>
     );
   }
 }
 
-export default App;
+export default App1;

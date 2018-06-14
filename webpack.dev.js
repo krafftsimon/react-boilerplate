@@ -13,6 +13,20 @@ module.exports = merge(common, {
     hot: true,
     historyApiFallback: true,
   },
+  module: {
+    rules: [
+      {
+        test: /\.(css|scss)$/,
+        exclude: /node-modules/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          { loader: 'postcss-loader' },
+          { loader: 'sass-loader' }
+        ],
+      },
+    ]
+  },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin()

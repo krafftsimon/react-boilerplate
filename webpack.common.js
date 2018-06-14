@@ -28,16 +28,6 @@ module.exports = {
         ],
       },
       {
-        test: /\.scss$/,
-        exclude: /node-modules/,
-        use: [
-          { loader: 'style-loader' },
-          { loader: 'css-loader' },
-          { loader: 'postcss-loader' },
-          { loader: 'sass-loader' }
-        ],
-      },
-      {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
         use: [
           {

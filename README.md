@@ -46,3 +46,4 @@ source-map-explorer main.[hash].js main.[hash].js.map
 
 # TODO
 add css minification
+add linter
