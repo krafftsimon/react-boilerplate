@@ -1,5 +1,5 @@
 # React / Redux Boilerplate
-Simple React / Redux boilerplate that uses redux-thunk and axios.
+Simple React / Redux boilerplate with webpack 4, redux-thunk, and axios.
 ```Shell
 npx react-redux-bp my-app
 ```
@@ -43,7 +43,7 @@ source-map-explorer main.[hash].js main.[hash].js.map
 - source maps for both dev and prod
 - Redux
 - Jest with Enzyme
+- ESLint (Airbnb config)
 
 # TODO
-add css minification
 add linter

@@ -12,11 +12,14 @@ const HtmlWebPackPluginConfig = new HtmlWebPackPlugin({
 
 module.exports = {
   entry: {
-    main: './src/index.js',
+    main: './src/index.jsx',
   },
   output: {
     filename: '[name].[hash].js',
     path: path.resolve('./build')
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
   module: {
     rules: [
@@ -25,6 +28,14 @@ module.exports = {
         exclude: /node-modules/,
         use: [
           { loader: 'babel-loader' },
+        ],
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: [
+          { loader: 'babel-loader' },
+          { loader: 'eslint-loader' }
         ],
       },
       {

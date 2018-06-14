@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
-import thunkMiddleware from'redux-thunk';
+import thunkMiddleware from 'redux-thunk';
 
 import rootReducer from './reducers/root-reducer';
 import App from './app';
@@ -17,14 +17,14 @@ const render = (Component) => {
         <Component />
       </Provider>
     </AppContainer>,
-    document.getElementById('root')
+    document.getElementById('root'),
   );
-}
+};
 
 render(App);
 
 if (module.hot) {
-  module.hot.accept('./app', () => { 
-    render(App); 
+  module.hot.accept('./app', () => {
+    render(App);
   });
 }
