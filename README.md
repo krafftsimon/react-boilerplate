@@ -1,7 +1,9 @@
 # React / Redux Boilerplate
 Simple React / Redux boilerplate with webpack 4, babel, redux-thunk, and axios.
 ```Shell
-npx react-redux-bp my-app
+git clone https://github.com/krafftsimon/react-boilerplate.git
+cd react-boilerplate
+npm install
 ```
 
 # Features
@@ -58,7 +60,7 @@ source-map-explorer main.[hash].js main.[hash].js.map
 ```
 
 ## Enable ESLint
-Add the following line to .eslintrc file, to enable use the Airbnb configuration.
+Add the following line to .eslintrc file, to enable the Airbnb configuration.
 Feel free to use any other configuration.
 ```diff
 {
