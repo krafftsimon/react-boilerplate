@@ -7,6 +7,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 // inject option defaults to true -> javascript is injected at the bottom of <body>
 const HtmlWebPackPluginConfig = new HtmlWebPackPlugin({
   template: './src/index.html',
+  favicon: './src/assets/favicon.ico',
 });
 
 
