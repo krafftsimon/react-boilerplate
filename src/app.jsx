@@ -1,30 +1,24 @@
 import React, { Component } from 'react';
 
 import './app.scss';
-import eaimg from './assets/EA.png';
+import react from './assets/react.svg';
+import redux from './assets/redux.svg';
+import webpack from './assets/webpack.svg';
+import babel from './assets/babel.svg';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      counter: 0,
-    };
-  }
-
-  incrCounter() {
-    this.setState({
-      counter: this.state.counter + 1,
-    });
-  }
-
   render() {
     return (
-      <div className="test">
-        <h1>Welcome to React / Redux Boilerplate App.</h1>
-        <h2>Welcome to React / Redux Boilerplate App.</h2>
-        <img alt="electronic arts" src={eaimg} />
-        <div> {this.state.counter} </div>
-        <button onClick={() => this.incrCounter()}>incr</button>
+      <div className="page">
+        <div className="container">
+          <h1>Welcome to React / Redux Boilerplate App.</h1>
+          <div className="logos-container">
+            <img alt="react" src={react} />
+            <img alt="redux" src={redux} />
+            <img alt="webpack" src={webpack} />
+            <img alt="babel" src={babel} />
+          </div>
+        </div>
       </div>
     );
   }

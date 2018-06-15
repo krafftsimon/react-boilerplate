@@ -25,6 +25,7 @@ render(App);
 
 if (module.hot) {
   module.hot.accept('./app', () => {
-    render(App);
+    const NextApp = require('./app').default;
+    render(NextApp);
   });
 }
