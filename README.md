@@ -15,6 +15,7 @@ npm install
 - Redux
 - Jest with Enzyme
 - ESLint (Airbnb config)
+- css autoprefixer
 - cache busting
 
 # Commands
